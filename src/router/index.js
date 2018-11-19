@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import getData from '@/components/getData'
 import sockData from '@/components/sockData'
+import market from '@/components/market'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/sockData',
       name: 'sockData',
       component: sockData
+    },
+    {
+      path: '/market',
+      name: 'market',
+      component: market
     }
   ]
 })
